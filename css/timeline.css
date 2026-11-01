@@ -1,0 +1,8 @@
+.milestones { list-style: none; padding: 0; margin: 1.5rem 0; border-top: 1px solid var(--line); }
+.milestone { border-bottom: 1px solid var(--line); padding: 1rem 0; display: grid; grid-template-columns: auto 1fr auto; gap: .2rem 1rem; align-items: start; }
+.milestone input { width: 1.25rem; height: 1.25rem; margin-top: .3rem; accent-color: var(--accent-ink); }
+.milestone label { font-weight: 500; margin: 0; }
+.milestone[data-status='done'] label { color: var(--muted); text-decoration: line-through; }
+.milestone .when { grid-column: 2; color: var(--muted); font-size: .9rem; }
+.milestone .note { grid-column: 2; color: var(--muted); font-size: .9rem; margin: 0; }
+.notice { border-left: 2px solid var(--accent); padding-left: 1rem; color: var(--muted); margin-bottom: 1.5rem; }

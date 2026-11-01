@@ -1,0 +1,14 @@
+.type-options { display: grid; gap: .75rem; }
+.type-option { position: relative; border: 1px solid var(--line); padding: 1rem 1.2rem; border-radius: 2px; cursor: pointer; display: block; font-weight: 400; margin: 0; }
+.type-option:hover { border-color: var(--muted); }
+.type-option input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.type-option:has(input:checked) { border-color: var(--accent); outline: 1px solid var(--accent); }
+.type-option:has(input:focus-visible) { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+.type-option strong { font-family: var(--font-head); font-weight: 400; font-size: 1.25rem; display: block; }
+.type-option span { color: var(--muted); font-size: .95rem; }
+.label-like { display: block; font-weight: 500; margin-bottom: .5rem; }
+.check { display: flex; align-items: center; gap: .6rem; font-weight: 400; margin: 0; padding: .35rem 0; }
+.check input { width: 1.15rem; height: 1.15rem; accent-color: var(--accent-ink); }
+#review dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .3rem 1.25rem; }
+#review dt { color: var(--muted); }
+#review dd { margin: 0; }

@@ -1,0 +1,17 @@
+{
+  "name": "soiree",
+  "version": "1.0.0",
+  "description": "Soirée: a minimalist GenAI planning assistant for weddings, birthdays and community events.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=18.18" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/app.test.js",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

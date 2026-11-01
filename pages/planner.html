@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan an event · Soirée</title>
+  <meta name="description" content="Set up a wedding, birthday or community event.">
+  <meta name="theme-color" content="#faf8f5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🥂</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/planner.css">
+</head>
+<body data-page="planner">
+  <header id="site-header"></header>
+  <main id="main">
+    <h1>Plan an event</h1>
+    <p class="lede">Four short steps. Everything else is calculated from your answers.</p>
+    <form id="wizard" novalidate>
+      <p id="step-label" class="muted" aria-live="polite"></p>
+
+      <fieldset data-step="1">
+        <legend>What are you celebrating?</legend>
+        <div id="type-options" class="type-options"></div>
+        <p id="err-type" class="error" role="alert"></p>
+      </fieldset>
+
+      <fieldset data-step="2" hidden>
+        <legend>The basics</legend>
+        <div class="field"><label for="name">Event name</label><input id="name" type="text" maxlength="80" autocomplete="off" placeholder="Asha and Ravi"><p id="err-name" class="error" role="alert"></p></div>
+        <div class="field"><label for="date">Date</label><input id="date" type="date"><p id="err-date" class="error" role="alert"></p></div>
+        <div class="field"><label for="guests">Expected guests</label><input id="guests" type="number" inputmode="numeric" step="1"><p id="err-guests" class="error" role="alert"></p></div>
+      </fieldset>
+
+      <fieldset data-step="3" hidden>
+        <legend>Budget</legend>
+        <div class="field"><label for="budget">Total budget</label><input id="budget" type="number" inputmode="numeric" min="100" step="1000"><p id="err-budget" class="error" role="alert"></p></div>
+        <div class="field"><label for="currency">Currency</label><select id="currency"></select></div>
+        <div class="field"><span id="prio-label" class="label-like">Priorities <span class="hint">Choose up to 3 to give them a larger share.</span></span><div id="priorities" role="group" aria-labelledby="prio-label"></div><p id="err-priorities" class="error" role="alert"></p></div>
+      </fieldset>
+
+      <fieldset data-step="4" hidden>
+        <legend>The feeling</legend>
+        <div class="field"><label for="vibe">Describe the vibe <span class="hint">Optional. For example: garden, candlelit, relaxed.</span></label><input id="vibe" type="text" maxlength="120" autocomplete="off"><p id="err-vibe" class="error" role="alert"></p></div>
+        <div id="review" class="card" aria-live="polite"></div>
+      </fieldset>
+
+      <p id="form-status" class="status" role="status"></p>
+      <div class="btn-row">
+        <button class="btn" type="button" data-action="wizard-back" id="back" hidden>Back</button>
+        <button class="btn btn-primary" type="button" data-action="wizard-next" id="next">Continue</button>
+        <button class="btn btn-primary" type="submit" id="create" hidden>Create plan</button>
+      </div>
+    </form>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="chat-root"></div>
+  <script type="module" src="../js/planner.js"></script>
+</body>
+</html>

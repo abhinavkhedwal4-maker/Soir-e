@@ -1,0 +1,5 @@
+Contact: https://github.com/soiree-app/soiree/issues
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://soiree.vercel.app/.well-known/security.txt
+Policy: https://github.com/soiree-app/soiree/blob/main/SECURITY.md

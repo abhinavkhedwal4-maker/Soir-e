@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "env": { "browser": true, "node": true, "es2022": true },
+  "parserOptions": { "ecmaVersion": 2022, "sourceType": "module" },
+  "extends": ["eslint:recommended"],
+  "ignorePatterns": ["node_modules/", ".vercel/"],
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-empty": ["error", { "allowEmptyCatch": false }]
+  }
+}

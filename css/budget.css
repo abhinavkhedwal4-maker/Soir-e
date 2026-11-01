@@ -1,0 +1,11 @@
+.cat-row { border-top: 1px solid var(--line); padding: 1rem 0; display: grid; grid-template-columns: 1fr auto; gap: .35rem 1rem; align-items: center; }
+.cat-row:last-of-type { border-bottom: 1px solid var(--line); }
+.cat-row h3 { margin: 0; font-size: 1.1rem; }
+.cat-row .planned { color: var(--muted); font-size: .9rem; }
+.cat-row .spend { display: flex; align-items: center; gap: .6rem; }
+.cat-row .spend input { width: 9rem; text-align: right; }
+.cat-row progress, .cat-row .row-note { grid-column: 1 / -1; }
+.row-note { display: flex; justify-content: space-between; gap: 1rem; font-size: .85rem; color: var(--muted); }
+.alert { border: 1px solid var(--danger); color: var(--danger); padding: .8rem 1rem; margin-bottom: 1.5rem; border-radius: 2px; }
+.alert[hidden] { display: none; }
+@media (max-width: 30rem) { .cat-row { grid-template-columns: 1fr; } .cat-row .spend input { width: 100%; } }
