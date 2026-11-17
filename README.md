@@ -1,4 +1,4 @@
-# Soirée: a GenAI planner for weddings, birthdays and community events
+# Soire: a GenAI planner for weddings, birthdays and community events
 
 > Budgets, timelines and checklists are **calculated by tested code**. The AI handles the part that needs imagination: ideas, tailoring and vendor questions.
 
